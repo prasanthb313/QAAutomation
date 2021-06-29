@@ -1,0 +1,24 @@
+Node JS --> angular(CLI) will be installed
+
+.Net 5 core services
+
+API --> Application programming interface
+back End --> My SQL
+
+
+Web Driver IO
+
+
+Test Strategy
+
+
+Testing framework
+Re Useble functions
+Reports
+
+
+Tool ---> Visual studio code
+Framework ---> Cucumber
+Test Cafe
+Git
+Type Script

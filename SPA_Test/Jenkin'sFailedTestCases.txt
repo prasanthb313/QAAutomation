@@ -1,0 +1,22 @@
+Executing multiple test cases
+
+
+@echoff
+SET test=AMRegressionFunctionalTestCases
+FOR %%T IN (%test%) do (
+"C:\Program Files (x86)\NUnit.org\nunit-console\nunit3-console.exe" "STAF-v510.2\STAF-v510.2.csproj" --testparam "Browser=firefox" --testparam "Domain=SUMMITAutomation" --testparam "Releases=TAHOE" --testparam "AppUrl=TAHOEFINAL_GDPRON" --where "test =~ /%%T/"
+ )
+PAUSE
+
+
+
+Debugging the test case
+
+
+"C:\Program Files (x86)\NUnit.org\nunit-console\nunit3-console.exe" "STAF-v510.2\STAF-v510.2.csproj" --testparam "Browser=chrome" --testparam "Domain=SUMMITAutomation"  --testparam "Releases=DENALI" --testparam "AppUrl=DENALISP3HF03B001_GDPROFF" --where "test =~/SR_BulkUpdate_Conf_MandatoryValidate/" --debug
+
+
+"C:\Program Files (x86)\NUnit.org\nunit-console\nunit3-console.exe" "STAF-v510.2\STAF-v510.2.csproj" --testparam "Browser=chrome" --testparam "Domain=SUMMITAutomation"  --testparam "Releases=TAHOE" --testparam "AppUrl=TAHOEHF01B001_GDPROFF" --where "test =~/SR_Evaluation_TC_07/" --debug
+
+
+"C:\Program Files (x86)\NUnit.org\nunit-console\nunit3-console.exe" "STAF-v510.2\STAF-v510.2.csproj" --testparam "Browser=chrome" --testparam "Domain=SUMMITAutomation"  --testparam "Releases=TAHOE" --testparam "AppUrl=TAHOEHF01B001_GDPROFF" --where "test =~/SR_UploadAttachment_TC01/" --debug
